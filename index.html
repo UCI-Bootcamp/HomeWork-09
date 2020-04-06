@@ -8,5 +8,15 @@
 </head>
 <body>
     <header>Hello World</header>
+
+    <script>
+        const fs = require('fs')
+
+        fs.writeFile('some.txt', 'Hello World!', (e) => {
+            console.log(e)
+        })
+
+
+    </script>
 </body>
 </html>
